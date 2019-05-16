@@ -10,7 +10,7 @@ namespace ReportCardPlus.Controllers
         {
         public ActionResult Index()
             {
-            ViewBag.Title = "Home ";
+            ViewBag.Title = "Homes ";
 
             return View();
             }

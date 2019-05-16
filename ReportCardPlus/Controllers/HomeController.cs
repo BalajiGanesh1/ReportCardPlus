@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ReportCardPlus.DAL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,9 +11,10 @@ namespace ReportCardPlus.Controllers
         {
         public ActionResult Index()
             {
+            
             ViewBag.Title = "Homes ";
-
-            return View();
+             SchoolContext db = new SchoolContext();
+            return View(db.Students.ToList());
             }
         }
     }
